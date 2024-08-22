@@ -1,4 +1,4 @@
-Sample dockerfiles that use X Forwarding for GUI
+Sample dockerfiles that use VNC for GUI
 
 [Sublime Text](sublimetext)
 
