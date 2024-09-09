@@ -13,7 +13,7 @@ docker run -it --rm -e DISPLAY=host.docker.internal:0 -v /tmp/.X11-unix:/tmp/.X1
 
 With the `java.opts` the background color issue disappeared
 
-![img](./mathlab.png)
+![img](./matlab.png)
 
 
 I used this image https://hub.docker.com/r/mathworks/matlab to a create a custom Docker image from the MATLAB container base image
