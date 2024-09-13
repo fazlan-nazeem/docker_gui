@@ -1,0 +1,16 @@
+services:
+  matlab:
+    build:
+      context: .
+      dockerfile: Dockerfile 
+    image: my-matlab-container
+    environment:
+      - DISPLAY=host.docker.internal:0
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix:ro
+      - ./documents:/documents
+    shm_size: '512M'
+    stdin_open: true  # Equivalent to -it
+    tty: true         # Equivalent to -it
+    restart: "no"     # Equivalent to --rm
+
